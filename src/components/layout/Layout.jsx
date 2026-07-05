@@ -3,13 +3,13 @@ import Sidebar from "./Sidebar";
 
 const Layout = () => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <section>
+      <div className="flex flex-1">
         <Sidebar />
-        <main>Main-content</main>
-      </section>
-    </>
+        <main className="flex-1">Main-content</main>
+      </div>
+    </div>
   );
 };
 
